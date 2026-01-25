@@ -14,7 +14,7 @@ export default function LandingPage() {
 			<div className="max-w-7xl mx-auto px-6 relative z-10">
 				<div className='grid lg:grid-cols-2 gap-12 lg:gap-20 items-center'>
 					<div className='flex flex-col gap-8 text-center lg:text-left'>
-						<h1 className='text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary-foreground leading-[1.5] tracking-tight'>
+						<h1 className='text-2xl md:text-4xl lg:text-5xl font-extrabold text-primary-foreground leading-normal tracking-tight'>
 							Membuka <span className='text-secondary relative whitespace-nowrap'>akses</span> <br />
 							Menumbuhkan <span className='text-secondary-foreground relative whitespace-nowrap'>daya</span> <br />
 							Mewujudkan <span className='text-primary relative whitespace-nowrap'>dampak</span>
