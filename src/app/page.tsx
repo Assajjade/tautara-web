@@ -6,7 +6,7 @@ export default function LandingPage() {
   return (
     <main className="flex flex-col min-h-screen bg-white overflow-x-hidden">
       {/* Hero Section */}
-      	<section className="relative pt-32 pb-20 lg:pt-44 lg:pb-32 h-screen">
+      	<section className="relative pt-32 pb-20 lg:pt-44 lg:pb-32 min-h-screen">
         	<div className="absolute top-0 right-0 w-1/2 h-screen bg-slate-50/80 skew-x-12 transform origin-top-right hidden lg:block"></div>
           	<div className="absolute top-40 left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl mix-blend-multiply"></div>
           	<div className="absolute bottom-10 right-1/2 w-72 h-72 bg-indigo-400/10 rounded-full blur-3xl mix-blend-multiply"></div>
