@@ -49,10 +49,8 @@ export default function LandingPage() {
               <div className="relative h-full w-full mt-12 lg:mt-0 flex items-center justify-center p-4 lg:p-0">
                 <div className="aspect-[4/3] lg:aspect-square w-full max-w-lg bg-gradient-to-tr from-blue-50 to-indigo-100 rounded-[2rem] relative overflow-hidden shadow-2xl shadow-blue-900/10 border-[8px] border-white transform rotate-3 hover:rotate-0 transition-all duration-500 ease-out">
 
-                  {/* Placeholder Content di dalam kotak */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-10 opacity-60">
                     <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mb-6 shadow-md text-blue-500">
-                      {/* Ikon Koneksi/Link */}
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l1.757-1.757" />
                       </svg>
@@ -61,7 +59,6 @@ export default function LandingPage() {
                     <p className="text-slate-500"></p>
                   </div>
 
-                  {/* Efek kilau halus di atas gambar placeholder */}
                   <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent pointer-events-none"></div>
                 </div>
               </div>
@@ -69,17 +66,14 @@ export default function LandingPage() {
           </div>
       </section>
 
-      {/* 2. Filosofi Section: Taut + Antara & Taut + Arah */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
 
-          {/* 1. Judul Tautara (Color Split) */}
           <h2 className="text-7xl md:text-8xl font-black mb-12 tracking-tighter">
-            <span className="text-[#c1d061]">Taut</span>
-            <span className="text-[#a294cf]">ara</span>
+            <span className="text-secondary-foreground">Taut</span>
+            <span className="text-secondary">ara</span>
           </h2>
 
-          {/* Ganti src dengan path file gambar puzzle Anda */}
           <div className="flex justify-center mb-16">
             <div className="w-full max-w-2xl aspect-[3/1] relative">
               <Image src={HeroPuzzle} fill className="object-contain" alt="Konektor" />
@@ -89,11 +83,11 @@ export default function LandingPage() {
           <div className="max-w-4xl mx-auto mb-20">
             <p className="text-lg md:text-xl text-slate-500 leading-relaxed font-medium">
               Platform yang menjembatani
-              <span className="text-[#a294cf] font-bold">Mitra Belajar</span>
+              <span className="text-secondary font-bold">Mitra Belajar</span>
               (lembaga, komunitas, dan organisasi) dengan
-              <span className="text-[#a294cf] font-bold">Mitra Ajar</span>
-              (fasilitator, tenaga ahli, dan praktisi) dalam merancang dan menjalankan proses pembelajaran sepanjang hayat yang bermakna  
-              <span className="text-[#a294cf] font-bold text-xl md:text-xl mt-2">melalui:</span>
+              <span className="text-secondary font-bold">Mitra Ajar</span>
+              (fasilitator, tenaga ahli, dan praktisi) dalam merancang dan menjalankan proses pembelajaran sepanjang hayat yang bermakna
+              <span className="text-secondary font-bold text-xl md:text-xl mt-2">melalui:</span>
             </p>
           </div>
 
@@ -102,8 +96,7 @@ export default function LandingPage() {
             <div className="relative pt-12">
               {/* Icon Container */}
               <div className="absolute top-0 left-8 w-24 h-24 bg-white border-2 border-[#86a789] rounded-full flex items-center justify-center z-10 p-4 shadow-sm">
-                <div className="text-[#c1d061]">
-                   {/* Ganti dengan Ikon Training Anda */}
+                <div className="text-secondary-foreground">
                    <svg className="w-full h-full" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
                 </div>
               </div>
@@ -122,7 +115,7 @@ export default function LandingPage() {
             <div className="relative pt-12">
               {/* Icon Container */}
               <div className="absolute top-0 left-8 w-24 h-24 bg-white border-2 border-[#86a789] rounded-full flex items-center justify-center z-10 p-4 shadow-sm">
-                <div className="text-[#c1d061]">
+                <div className="text-secondary-foreground">
                    {/* Ganti dengan Ikon Seminar Anda */}
                    <svg className="w-full h-full" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" /></svg>
                 </div>
