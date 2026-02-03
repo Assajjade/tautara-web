@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Users, Compass, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowRight, Users, Compass, ShieldCheck, Zap, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -207,27 +207,107 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 3. Core Values Section */}
-      <section className="py-20 px-6 bg-slate-900 text-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-16">Nilai Inti Kami [cite: 20]</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <div className="text-blue-400 flex justify-center"><ArrowRight /></div>
-              <h4 className="font-bold uppercase tracking-widest">Connector [cite: 21]</h4>
+      <section className="py-24 px-6 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+
+          {/* --- KOLOM KIRI: Narasi --- */}
+          <div className="flex flex-col">
+            <h2 className="text-6xl md:text-7xl font-extrabold text-[#a294cf] leading-tight mb-8">
+              Konsultasi <br /> Sekarang
+            </h2>
+            <div className="space-y-6">
+              <h3 className="text-2xl font-black text-[#c1d061]">
+                Mari mulai dari kebutuhan.
+              </h3>
+              <p className="text-xl text-[#c1d061] font-medium max-w-md leading-relaxed">
+                Ruang ini hadir untuk mendengarkanmu supaya kami dapat merancang layanan yang tepat guna.
+              </p>
             </div>
-            <div className="space-y-4">
-              <div className="text-blue-400 flex justify-center"><Users /></div>
-              <h4 className="font-bold uppercase tracking-widest">People-Oriented [cite: 22]</h4>
-            </div>
-            <div className="space-y-4">
-              <div className="text-blue-400 flex justify-center"><ShieldCheck /></div>
-              <h4 className="font-bold uppercase tracking-widest">Trustworthy </h4>
-            </div>
-            <div className="space-y-4">
-              <div className="text-blue-400 flex justify-center"><Zap /></div>
-              <h4 className="font-bold uppercase tracking-widest">Empower [cite: 24]</h4>
-            </div>
+          </div>
+
+          {/* --- KOLOM KANAN: Formulir --- */}
+          <div className="bg-[#86a789] rounded-[2.5rem] p-8 md:p-12 shadow-2xl">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
+
+              {/* Nama Lengkap */}
+              <div className="space-y-1">
+                <label className="text-white text-sm font-bold ml-2">Nama Lengkap</label>
+                <input type="text" className="w-full bg-[#e1eba7]/40 border-none rounded-full px-6 py-3 text-white placeholder-white/60 focus:ring-2 focus:ring-[#c1d061]" />
+              </div>
+
+              {/* Topik Pelatihan */}
+              <div className="space-y-1 relative">
+                <label className="text-white text-sm font-bold ml-2">Topik Pelatihan yang Dibutuhkan</label>
+                <div className="relative">
+                  <select className="w-full appearance-none bg-[#e1eba7]/40 border-none rounded-full px-6 py-3 text-white focus:ring-2 focus:ring-[#c1d061]">
+                    <option className="text-slate-700">Pilih Topik</option>
+                  </select>
+                  <ChevronDown className="absolute right-4 top-3.5 text-white w-5 h-5 pointer-events-none" />
+                </div>
+              </div>
+
+              {/* Alamat Email */}
+              <div className="space-y-1">
+                <label className="text-white text-sm font-bold ml-2">Alamat E-Mail</label>
+                <p className="text-[10px] text-white/80 ml-2 -mt-1 mb-1">Alamat yang dapat dihubungi sebagai narahubung</p>
+                <input type="email" className="w-full bg-[#e1eba7]/40 border-none rounded-full px-6 py-3 text-white focus:ring-2 focus:ring-[#c1d061]" />
+              </div>
+
+              {/* Topik Lainnya */}
+              <div className="space-y-1">
+                <label className="text-white text-sm font-bold ml-2">Topik Lainnya</label>
+                <p className="text-[10px] text-white/80 ml-2 -mt-1 mb-1">Jika ada kebutuhan lain di luar topik di atas, tuliskan</p>
+                <input type="text" className="w-full bg-[#e1eba7]/40 border-none rounded-full px-6 py-3 text-white focus:ring-2 focus:ring-[#c1d061]" />
+              </div>
+
+              {/* Nomor WhatsApp */}
+              <div className="space-y-1">
+                <label className="text-white text-sm font-bold ml-2">Nomor WhatsApp</label>
+                <input type="text" className="w-full bg-[#e1eba7]/40 border-none rounded-full px-6 py-3 text-white focus:ring-2 focus:ring-[#c1d061]" />
+              </div>
+
+              {/* Skema & Jumlah Peserta */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-1 relative">
+                  <label className="text-white text-xs font-bold ml-2">Skema Pelaksanaan</label>
+                  <select className="w-full appearance-none bg-[#e1eba7]/40 border-none rounded-full px-4 py-3 text-white focus:ring-2 focus:ring-[#c1d061]">
+                    <option></option>
+                  </select>
+                  <ChevronDown className="absolute right-3 top-8 text-white w-4 h-4 pointer-events-none" />
+                </div>
+                <div className="space-y-1">
+                  <label className="text-white text-xs font-bold ml-2">Jumlah Peserta</label>
+                  <input type="text" className="w-full bg-[#e1eba7]/40 border-none rounded-full px-4 py-3 text-white focus:ring-2 focus:ring-[#c1d061]" />
+                </div>
+              </div>
+
+              {/* Kebutuhan Program */}
+              <div className="md:col-span-2 space-y-1">
+                <label className="text-white text-sm font-bold ml-2">Kebutuhan Program</label>
+                <p className="text-[10px] text-white/80 ml-2 -mt-1 mb-1">Ceritakan singkat tentang konteks kebutuhan atau tantangan yang sedang dihadapi</p>
+                <textarea rows={3} className="w-full bg-[#e1eba7]/40 border-none rounded-[1.5rem] px-6 py-4 text-white focus:ring-2 focus:ring-[#c1d061] resize-none"></textarea>
+              </div>
+
+              {/* Sumber Informasi */}
+              <div className="md:col-span-2 space-y-1 relative">
+                <label className="text-white text-sm font-bold ml-2">Sumber Informasi tentang Tautara?</label>
+                <p className="text-[10px] text-white/80 ml-2 -mt-1 mb-1">Bantu kami memahami bagaimana kamu menemukan Tautara.</p>
+                <div className="relative">
+                  <select className="w-full appearance-none bg-[#e1eba7]/40 border-none rounded-full px-6 py-3 text-white focus:ring-2 focus:ring-[#c1d061]">
+                    <option></option>
+                  </select>
+                  <ChevronDown className="absolute right-4 top-3.5 text-white w-5 h-5 pointer-events-none" />
+                </div>
+              </div>
+
+              {/* Submit Button (Tambahan fungsional) */}
+              <div className="md:col-span-2 pt-4">
+                <button className="w-full bg-[#c1d061] hover:bg-white hover:text-[#c1d061] text-white font-black py-4 rounded-full transition-all text-lg shadow-xl uppercase tracking-widest">
+                  Kirim Kebutuhan
+                </button>
+              </div>
+
+            </form>
           </div>
         </div>
       </section>
