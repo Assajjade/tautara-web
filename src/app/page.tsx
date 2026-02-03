@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import HeroPuzzle from '../../public/images/hero/hero-puzzle.png';
+import LearningArea from '../../public/images/hero/landing-page-learning-area.png';
+import IconOwl from '../../public/images/hero/landing-page-icon-owl.png';
 
 export default function LandingPage() {
   return (
@@ -136,30 +138,70 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <section className="py-24 px-6 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto">
 
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Taut + Antara */}
-            <div className="p-8 border rounded-2xl bg-white shadow-sm">
-              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
-                <Users size={28} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Taut + Antara [cite: 6]</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                Menautkan di antara para pembelajar sepanjang hayat sebagai penghubung, perantara, dan jembatan bagi komunitas Anda[cite: 7, 8, 9].
-              </p>
+          {/* 1. Header Section */}
+          <div className="mb-16">
+            <h2 className="text-5xl md:text-6xl font-extrabold text-[#a294cf] mb-4">
+              Area Pembelajaran
+            </h2>
+            <p className="text-[#86a789] text-xl font-medium">
+              Titik berangkat proses belajar yang dapat disesuaikan dengan kebutuhan.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            {/* 2. Kolom Kiri: Diagram Area */}
+            {/* Tempatkan file diagram Anda di public/images/diagram-area.png */}
+            <div className="relative w-full aspect-square max-w-xl mx-auto">
+              <Image
+                src={LearningArea}
+                alt="Diagram Area Pembelajaran Tautara"
+                fill
+                className="object-contain"
+              />
             </div>
 
-            {/* Taut + Arah */}
-            <div className="p-8 border rounded-2xl bg-white shadow-sm">
-              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-6">
-                <Compass size={28} />
+            {/* 3. Kolom Kanan: Info & Maskot */}
+            <div className="flex flex-col gap-8">
+
+              {/* Bubble Chat / Info Box */}
+              <div className="relative bg-[#86a789] p-8 md:p-10 rounded-[2.5rem] text-white shadow-xl">
+                <p className="text-lg leading-relaxed font-medium">
+                  Jika kebutuhanmu berada di luar <br />
+                  <span className="font-bold underline">area pembelajaran</span>, kamu tetap dapat mengajukannya.
+                </p>
+                <p className="text-lg leading-relaxed mt-6">
+                  Tautara terbuka untuk mengeksplorasi topik lain sesuai konteks dan kebutuhan <span className="font-bold">Mitra Belajar</span>.
+                </p>
+
+                {/* Ekor gelembung bicara (opsional, untuk memperkuat kesan bicara maskot) */}
+                <div className="absolute -bottom-4 right-16 w-8 h-8 bg-[#86a789] rotate-45 hidden md:block"></div>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Taut + Arah [cite: 16]</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                Membantu penggerak perubahan bukan hanya sekadar tahu, tapi memahami ke mana harus melangkah melalui fasilitasi pertumbuhan[cite: 17, 19].
-              </p>
+
+              {/* Tombol Aksi & Maskot */}
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:pr-10">
+                <Link
+                  href="/konsultasi"
+                  className="bg-[#c1d061] text-white px-10 py-4 rounded-full font-bold text-lg hover:brightness-105 transition-all shadow-lg shadow-[#c1d061]/20 whitespace-nowrap"
+                >
+                  Konsultasi Sekarang
+                </Link>
+
+                {/* Maskot Burung Hantu */}
+                {/* Tempatkan file maskot Anda di public/images/mascot-owl.png */}
+                <div className="relative w-48 h-48 md:w-56 md:h-56 -mt-10 md:mt-0">
+                  <Image
+                    src={IconOwl}
+                    alt="Maskot Tautara"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
