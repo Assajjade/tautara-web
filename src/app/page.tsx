@@ -194,7 +194,6 @@ export default function LandingPage() {
 
             <div className="relative bg-[#86a789] rounded-[2.5rem] p-8 md:p-12 md:px-8 shadow-[0_30px_60px_-15px_rgba(134,167,137,0.5)] transform hover:-translate-y-1 transition-all duration-500">
               <form className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
-
                 {[
                   { label: "Nama Lengkap", type: "text", placeholder: "Contoh: Budi Santoso" },
                   { label: "Nomor WhatsApp", type: "text", placeholder: "0812..." },
@@ -214,10 +213,13 @@ export default function LandingPage() {
                 <div className="space-y-1.5 relative">
                   <label className="text-white text-sm font-bold ml-2 opacity-90">Topik Pelatihan</label>
                   <div className="relative">
-                    <select className="w-full appearance-none bg-white/10 border border-white/20 rounded-full px-6 py-3.5 text-white focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-[#c1d061] transition-all">
-                      <option className="text-slate-700">Pilih Topik Utama</option>
-                      <option className="text-slate-700">Project Management</option>
+                    <select className="w-full appearance-none bg-white/10 border border-white/20 rounded-full px-6 py-3.5 text-white focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-[#c1d061] transition-all cursor-pointer">
+                      <option className="text-slate-700" disabled selected>Pilih Topik Utama</option>
+                      <option className="text-slate-700">Pendidikan</option>
+                      <option className="text-slate-700">Pendidikan Khusus</option>
                       <option className="text-slate-700">Leadership Skills</option>
+                      <option className="text-slate-700">Community Service/Development</option>
+                      <option className="text-slate-700">Project Management</option>
                     </select>
                     <ChevronDown className="absolute right-5 top-4 text-white w-5 h-5 pointer-events-none opacity-60" />
                   </div>
@@ -231,11 +233,14 @@ export default function LandingPage() {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-1.5 relative">
-                    <label className="text-white text-xs font-bold ml-2">Skema</label>
+                    <label className="text-white text-xs font-bold ml-2">Skema Pelaksanaan</label>
                     <div className="relative">
-                      <select className="w-full appearance-none bg-white/10 border border-white/20 rounded-full px-4 py-3 text-white focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-[#c1d061]">
-                        <option>Luring</option>
-                        <option>Daring</option>
+                      <select className="w-full appearance-none bg-white/10 border border-white/20 rounded-full px-4 py-3 text-white focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-[#c1d061] cursor-pointer">
+                        <option className="text-slate-700" disabled selected>Pilih Skema</option>
+                        <option className="text-slate-700">daring</option>
+                        <option className="text-slate-700">luring</option>
+                        <option className="text-slate-700">hybrid</option>
+                        <option className="text-slate-700">masih terbuka untuk didiskusikan</option>
                       </select>
                       <ChevronDown className="absolute right-3 top-3.5 text-white w-4 h-4 pointer-events-none opacity-60" />
                     </div>
@@ -249,9 +254,11 @@ export default function LandingPage() {
                 <div className="space-y-1.5 relative">
                   <label className="text-white text-xs font-bold ml-2">Sumber Informasi</label>
                   <div className="relative">
-                    <select className="w-full appearance-none bg-white/10 border border-white/20 rounded-full px-4 py-3 text-white focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-[#c1d061]">
-                      <option>Instagram</option>
-                      <option>LinkedIn</option>
+                    <select className="w-full appearance-none bg-white/10 border border-white/20 rounded-full px-4 py-3 text-white focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-[#c1d061] cursor-pointer">
+                      <option className="text-slate-700" disabled selected>Mengetahui Tautara dari...</option>
+                      <option className="text-slate-700">Media Sosial</option>
+                      <option className="text-slate-700">Teman atau Kerabat</option>
+                      <option className="text-slate-700">Website Tautara</option>
                     </select>
                     <ChevronDown className="absolute right-4 top-3.5 text-white w-4 h-4 pointer-events-none opacity-60" />
                   </div>
@@ -272,7 +279,6 @@ export default function LandingPage() {
                     Tim Tautara akan menghubungi Anda dalam 1x24 jam kerja
                   </p>
                 </div>
-
               </form>
             </div>
           </div>
