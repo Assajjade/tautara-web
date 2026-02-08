@@ -12,7 +12,7 @@ export default function Navbar() {
                     <div className='hidden md:flex items-center gap-6 text-sm font-medium'>
                         <Link href="/" className="hover:text-slate-200 transition">Beranda</Link>
                         <Link href="/about" className="hover:text-slate-200 transition">Tentang Kami</Link>
-                        <Link href="/agency" className="hover:text-slate-200 transition">Program</Link>
+                        <Link href="/program" className="hover:text-slate-200 transition">Program</Link>
                         <Link href="/akses" className="hover:text-slate-200 transition">Mitra Ajar</Link>
                         <Link href="/ruang-belajar" className="hover:text-slate-200 transition">Ruang Belajar</Link>
                     </div>
